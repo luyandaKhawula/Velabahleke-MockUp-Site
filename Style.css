@@ -1,0 +1,698 @@
+*{
+    /*Comments on the code*/
+    /*Main page style, this initializes the page styles*/
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+}
+.header{
+    /*Header style, this initializes the header styles*/
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    position: center;
+   
+
+}
+.home-banner{
+    /*Header style, this initializes the header styles*/
+    min-height: 70vh;
+    width: 100%;
+    top: 0;
+    /*We also put the background image here*/
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('pic.png');
+    background-size:cover;
+    background-position: center;
+    position: center;
+    background-repeat: no-repeat;
+     /*This is the animation function being called and used*/
+    animation: changingbg 15s ease-in-out infinite alternate;
+}
+.home-banner .home-textbox{
+    /*This styles the about us header*/
+    color: #ffffff;
+    padding-top: 350px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.home-textbox h1{
+    /*This styles the text box header*/
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.home-textbox p{
+    /*This styles the text box paragraph*/
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.banner{
+    /*Header style, this initializes the header styles*/
+    width: 100%;
+    top: 0;
+    position: center;
+    
+}
+.banner img{
+    /*Header style, this initializes the header styles*/
+    height: 500px;
+    width: 100%;
+    /*We also put the background image here*/
+    object-fit: cover;
+    align-items: center;
+}
+.banner-textbox{
+    /*This styles the about us header*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    padding: 10px 20px;
+
+}
+.banner-textbox h1{
+    /*This styles the text box header*/
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+}
+.banner-textbox p{
+    /*This styles the text box paragraph*/
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 1000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ /*This is the animation for the background image*/
+@keyframes changingbg{
+    /*This is the animation for the background image*/
+    0%{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('pic.png');
+    }
+    50%{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('pic1.png');
+    }
+    100%{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('pic2.png');
+    }
+    
+}
+body{
+    /*Body style, this initializes the body styles*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.top-navlinks{
+    /*Top navigation bar style, this initializes the top navigation bar styles*/
+    background: #000084;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0% 8%;
+    text-align: right;
+}
+.top-navlinks ul li{
+    /*This styles the top navigation bar list*/
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.top-navlinks ul li a{
+    /*This styles the top navigation bar links*/
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.top-navlinks ul li{
+    /*This styles the top navigation bar list*/
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: 0.5s;
+}
+.nav {
+    /*Navigation bar style, this initializes the navigation bar styles*/
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 0% 8%;
+    background: #ffd000;
+}
+.nav img {
+    /*This styles the logo at the top left*/
+    width: 100px;
+}
+.nav-links{
+    /*This styles the navigation links*/
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    /*This styles the navigation links list*/
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li::after{
+    /*This styles the navigation links list after you click on it, like changing the color*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5;
+}  
+.nav-links ul li:hover::after{
+    /*This styles the navigation links list when you hover over it*/
+    color:rgb(255, 255, 255);
+    transition: 0.5;
+    background-color: #000084;
+}
+.nav-links ul li a{
+    /*This styles the nav links to a specific colour*/
+    text-decoration: none;
+    color: #000084;
+    font-size: 22px;
+    transition: 0.3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+} 
+.text-box{
+    /*This styles the text box towards the center of the screen*/
+    position:absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 2.5em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.about-textbox{
+    /*This styles the text box towards the center of the screen*/
+    position:absolute;
+    width: 90%;
+    top: 35%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 2.5em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.about-textbox h1{
+    /*This styles the text box header*/
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.about-textbox p{
+    /*This styles the text box paragraph*/
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.text-box h1{
+    /*This styles the text box header*/
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+.text-box p{
+    /*This styles the text box paragraph*/
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.text-box a{
+    /*This styles the text box link*/
+    text-decoration: none;
+    color: #ffffff;
+    background: #000084;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-box a:hover{
+    /*This styles the text box link when you hover over it*/
+    background: #ffde20;
+    transition: 1s;
+    cursor: pointer;
+}
+/*Styling for the welcome message on the home page*/
+.welcomemsg{
+    /*This styles the welcome message*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.welcomemsg h1{
+    /*This styles the welcome message header*/
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 0 20px
+}
+.welcomemsg p{
+    /*This styles the welcome message paragraph*/
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+}
+.welcomemsg a{
+    /*This styles the welcome message link*/
+    text-decoration: none;
+    color: #ffffff;
+    background: #ffd000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 18px;
+    font-weight: 500;
+}
+.welcomemsg a:hover{
+    /*This styles the text box link when you hover over it*/
+    background: #000084;
+    transition: 1s;
+    cursor: pointer;
+}
+/*News section styling for the home page*/
+.news{
+    /*This styles the news section*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.news h1{
+    /*This styles the news section header*/
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.news p{
+    /*This styles the news section paragraph*/
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+}
+.news-container{
+    /*This styles the news box*/
+    display: flex;
+    flex-direction: row;
+}
+.news .row{
+    /*This styles the news box*/
+    display: flex;
+    flex-direction: row;
+}
+.news-container .row{
+    /*This styles the news box image*/
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    object-fit: cover;
+    
+}
+.news-container .col{
+    width: 40%;
+    margin: 5px;
+    padding: 20px;
+}
+.news-container .row img{
+    /*This styles the news box image*/
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    
+}
+.news-container .row:hover{
+    /*This styles the news box image when you hover over it*/
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.news .col h2{
+    /*This styles the news box header*/
+    font-size: 30px;
+    margin-bottom: 20px;
+    align-items: left;
+    text-align: left;
+    padding: 0 20px;
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.news .col p{
+    /*This styles the news box paragraph*/
+    font-size: 18px;
+    align-items: left;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow:auto;
+}
+.news a{
+    /*This styles the welcome message link*/
+    text-decoration: none;
+    color: #ffffff;
+    background: #ffd000;
+    padding: 10px 0px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+}
+.news a:hover{
+    /*This styles the text box link when you hover over it*/
+    background: #000084;
+    transition: 1s;
+    cursor: pointer;
+}
+.location{
+    /*This styles the location section*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 80px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+}
+.location iframe{
+    /*This styles the location section map*/
+    width: 100%;
+}
+.calender iframe{
+    /*This styles the calender section*/
+    width: 100%;
+    height: 500px;
+    border: 0;
+    margin-top: 20px;
+}
+.school-calender {
+    /*This styles the calender section*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+}
+.school-calender h1{
+    /*This styles the calender section header*/
+    font-size: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.contact-us{
+    /*This styles the contact us section*/
+    width: 80%;
+    margin: auto;
+}
+.contact-us .row{
+    /*This styles the contact us section row*/
+
+    align-items: left;
+}
+.contact-col{
+    /*This styles the contact us section column*/
+    width: 0%;
+    padding: 20px;
+}
+.contact-col div{
+    /*This styles the contact us section column div*/
+    display:flex;
+    align-items: left;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-col div h5{
+    /*This styles the contact us section column header*/
+    font-size: 20px;
+    margin-bottom: 5px;
+    align-items: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.contact-col div p{
+    /*This styles the contact us section column paragraph*/
+    font-size: 18px;
+    margin-bottom: 5px;
+    align-items: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-col div .fas{
+    /*This styles the contact us section column icon*/
+    font-size: 20px;
+    color: #000084;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.about-content{
+    /*This styles the about us section*/
+    font-family:'Times New Roman', Times, serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.about-content h1{
+    /*This styles the about us section header*/
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.about-content p{
+    /*This styles the about us section paragraph*/
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+    align-items: center;
+    text-align: justify;
+}
+.gallery{
+    /*This styles the gallery section*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.gallery img{
+    /*This styles the gallery section image*/
+    width: 32%;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    display: inline-block;
+    margin: 5px;
+}
+.gallery img:hover{
+    /*This styles the gallery section image when you hover over it*/
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.gallery h1{
+    /*This styles the gallery section header*/
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.gallery p{
+    /*This styles the gallery section paragraph*/
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+}
+.enrolment-process{
+    /*This styles the enrolment process section*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 90%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+}
+.enrolment-process h1{
+    /*This styles the enrolment process section header*/
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.enrolment-process h2{
+    /*This styles the enrolment process section header*/
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: left;
+    align-items: left;
+    display: flex;
+    padding-top: 20px;
+}
+.enrolment-process p{
+    /*This styles the enrolment process section paragraph*/
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.enrolement-process ul li{
+    /*This styles the enrolment process section list*/
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 20px;
+}
+.enrolment-process ul{
+    /*This styles the enrolment process section list*/
+    list-style:disc;
+    padding: 0;
+    margin: 0;
+}
+.fundraising {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0;
+    background: #ffffff;
+    width: 90%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+}
+.fundraising h1{
+    /*This styles the fundraising section header*/
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-bottom: 20px;
+}
+.fundraising h2{
+    /*This styles the fundraising section header*/
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: left;
+    align-items: left;
+    display: flex;
+    padding-top: 20px;
+}
+.fundraising p{
+    /*This styles the fundraising section paragraph*/
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.fundraising ul li{
+    /*This styles the fundraising section list*/
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.fundraising ul{
+    /*This styles the fundraising section list*/
+    list-style:number;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    /*This styles the footer*/
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-media{
+    /*This styles the social media links*/
+    margin-bottom: 20px;
+}
+.social-media a {
+    color: #0000ff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.social-media a:hover {
+    color: #ffd000;
+    transition: 0.3s;
+}
+.footer-bottom {
+    position: relative;
+    bottom: 0;
+    background: #000084;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.footer-bottom a {
+    color: #fff36b;
+}
+.footer-bottom p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
