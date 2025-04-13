@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanlam - CPTD Points</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5a5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+</head>
+<body>
+    <section class = "navigations">
+        <div class = "top-navlinks">
+            <ul>
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="Enrolment.html">Enrolment</a></li>
+                <li><a href="Personnel.html">Personnel</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="sanlam-cptd.html">For Teachers: CPTD Booking</a></li>
+            </ul>    
+        </div>
+    </section>
+    <!-- Navigation links in this section, for lower navigation tabs with the banner images for the website landing page -->
+    <section class = "header">
+        <div class = "nav">
+            <a href="Home.html"><img src="VBsmallLogo.png" alt="Velabahleke High School"></a>
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Fundraising.html">Fundraising</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <section class = "cptd-info">
+        <h2>What is CPTD?</h2>
+        <p>The Continuing Professional Teacher Development (CPTD) system is a professional development system for teachers in South Africa. It is designed to support teachers in their ongoing professional growth and development.
+        The CPTD system is based on the principles of lifelong learning and aims to enhance the quality of teaching and learning in South African schools.</p>
+        <p><strong>Sanlam</strong> is a registered service provider with the South African Council for Educators (SACE) and is able to provide CPTD points for teachers who complete their training. Educators are required to achieve tleast 150 points every 3 years by participating in various activities.</p>
+        <p><strong>Sanlam</strong> offers a variety of activities through CPTD programmes that are designed to meet the needs of teachers at different stages of their careers. These programmes cover a range of topics, including classroom management, curriculum development, and assessment strategies. To find out more click <a href="sanlam-cptd.html">here </a> or scroll down.</p>
+    </section>
+
+    <section class = "cptd-form">
+        <h2>Sanlam CPTD Application Form</h2>
+        <p>To apply for CPTD points through Sanlam, teachers must complete the following application form. The form will be sent to Gayede Blue Star and a confirmation form will be sent to you.</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Only verified school emails are accepted" required><br><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="comments">Description:</label><br>
+            <textarea id="description" name="description" placeholder="What do you need us for?" rows="4" cols="50"></textarea><br><br>
+            <input type="checkbox" id="checkbox" name="checkbox" required> <label for="checkbox">I agree to the terms and conditions.</label><a href=""> To be added here.</a><br>
+            <input type="checkbox" id="checkbox" name="checkbox" required> <label for="checkbox">I acknowledge that my information will be sent to Gayede Blue Star.<a href="https://www.sanlamadvice.co.za/bluestar/gayede"> Learn More</a></label><br>
+            <input type="submit" value="Submit"><br><br><br>
+        </form>
+    </section>
+
+    <section class="footer">
+        <a href="https://www.sanlamadvice.co.za/bluestar/gayede"><img src="3104.jfif" alt="Footer Logo" style="width: 200px; height: auto;"></a></li><br><br>
+        <p>&copy; 2023 KayWebSolutions. All rights reserved.</p>
+    </section>
+</body>
+</html>
